@@ -9,7 +9,7 @@ services:
         networks:
             - main
         volumes:
-            - ./web/app:/var/www
+            - ./web/app:/var/www/html
         # volume_driver: nfs
     mysql:
         build: mysql

@@ -3,7 +3,7 @@ FROM php:7-apache
 COPY config/php.ini /usr/local/etc/php/
 COPY app /var/www/
 
-RUN ln -s /var/www/web /var/www/html
+RUN ln -s /var/www/app/web /var/www/html
 
 RUN a2enmod rewrite
 RUN apt-get update

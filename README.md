@@ -3,13 +3,12 @@
 ## Dependencies
 
 * [Docker](https://www.docker.com/)
-* [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## How to use
 
 ### Download this repository
 
-	$ git clone git@github.com:brunogoossens/dockercompose-drupal8.git Drupal8-Docker
+	$ git clone git@github.com:cmbaughman/dockercompose-drupal8.git Drupal8-Docker
 	$ cd Drupal8-Docker
 
 ### Copy drupal code into web/app folder

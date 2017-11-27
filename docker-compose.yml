@@ -22,24 +22,6 @@ services:
         restart: always
         networks:
             - main
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        container_name: phpmyadmin
-        environment:
-            PMA_ARBITRARY: 0
-            PMA_HOST: "mysql"
-            PMA_PORT: 3306
-            PMA_USER: "root"
-            PMA_PASSWORD: "root"
-        restart: always
-        ports:
-            - "8080:80"
-        links:
-            - mysql
-        volumes:
-            - /sessions
-        networks:
-            - main
 
 networks:
     main:

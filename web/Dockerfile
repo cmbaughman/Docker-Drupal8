@@ -29,4 +29,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 RUN composer require drupal/console --prefer-dist --optimize-autoloader --sort-packages -vvv
 RUN ln -s /etc/composer/vendor/bin/drupal /usr/bin/drupal
 
+RUN composer require drush/drush:dev-master --optimize-autoloader --sort-packages -vvv
+RUN ln -s /etc/composer/vendor/bin/drush /usr/bin/drush
+
 WORKDIR /var/www/html/
